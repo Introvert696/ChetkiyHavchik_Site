@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header class="flex">
+        <div class="logo fw800">
+            <p>ЧЕТКИЙ ХАВЧИК
+                <br>"ВНАТУРЕ ГРЮ"
+            </p>
+        </div>
+        <div class="center-btn pt10 fw800">
+            <p><a href="/">ПОСМОТРЕТЬ АССОРТИМЕНТ</a></p>
+        </div>
+        <div class="header-links pt10 fw800">
+            <a href="#">Главная</a>
+            <a href="">Ассортимент</a>
+            <a href="#">О нас</a>
+        </div>
+    </header>
+
+    <section class="section-one ctrobj">
+
+        <div class="title-order">
+            <p>ОФОРМЛЕНИЕ ЗАКАЗА</p>
+        </div>
+        <div class="form-data shadow ctrobj">
+            <div class="title-form ctrobj ">
+                <p>ВВЕДИТЕ ДАННЫЕ:</p>
+            </div>
+            <form action="http://vh522015.eurodir.ru/order/create" class="forms" method="POST">
+                <div class="input-box flex">
+                    <p>ФИО: </p><input type="text" name="FIO">
+                </div>
+                <div class="input-box flex">
+                    <p>Номер Тел.: </p><input type="text" name="number" >
+                </div>
+                <div class="input-box flex">
+                    <p>Email:</p><input type="text" name="email" >
+                </div>
+                <div class="input-box flex">
+                    <p>Адрес:</p><input type="text" name="address" >
+                </div>
+                <div class="input-box flex">
+                    <p>Комментарий:</p><input type="text" name="comment" >
+                </div>
+                <div class="input-box flex">
+                    <p>Выберите заказ:</p>
+                    <select name="purchases" class="purchases">
+                        
+                      </select>
+                </div>
+                <div class="form-btn ">
+                    <input id="submit" type="submit" value="submit" />
+                </div>
+                <div class="text-confid">
+                    <br>
+                    <p>Нажимая кнопку заказать вы принимаете условия конфиденциальности</p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="ctrobj">
+
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
