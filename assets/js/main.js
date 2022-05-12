@@ -2,13 +2,12 @@
 //получаем теги для дальнейшей вставки
 let itemItems = document.querySelector(".items");
 let purchasesDiv = document.querySelector(".purchases");
-let priceValue = document.getElementById("price");
-let optionList = document.getElementById("purchases");
+
 //массив со всеми предметами
 let itemsArr;
 
 //отправляем запрос на сервак, чтобы получить items
-fetch('http://localhost/items')
+fetch('http://vh522015.eurodir.ru/items')
   .then((response) => {
     return response.json();
   })
@@ -17,29 +16,36 @@ fetch('http://localhost/items')
       //пытаемся создать список для выбора
       createOptionList(data);
     } catch (error) {
-      //console.log(error);
+      console.log(error);
     }
     try {
       //Выводим предметы на главную страницу
       viewAllItems(data);
     } catch (error) {
       //обработка ошибок
+      console.log(error)
     }
 
   });
 
-//обработка нажатий по листу
-optionList.addEventListener("click", (e) => {
-  let selectedItemId = e.target.value;
-  //console.log(itemsArr);
-  itemsArr.forEach(el => {
-    if (selectedItemId == el.Item_Id) {
-      //console.log(el);
-      priceValue.value = el.Item_Price;
-    }
+try {
+  let priceValue = document.getElementById("price");
+  let optionList = document.getElementById("purchases");
+  //обработка нажатий по листу
+  optionList.addEventListener("click", (e) => {
+    let selectedItemId = e.target.value;
+    console.log(itemsArr);
+    itemsArr.forEach(el => {
+      if (selectedItemId == el.Item_Id) {
+        console.log(el);
+        priceValue.value = el.Item_Price;
+      }
+    });
   });
-});
-
+  
+} catch (error) {
+  
+}
 //вывод все предметов для заказа на главной
 function viewAllItems(data) {
   //console.log(itemItems);
