@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Сделать заказ</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 </head>
 
 <body>
@@ -21,9 +22,9 @@
             <p><a href="/">ПОСМОТРЕТЬ АССОРТИМЕНТ</a></p>
         </div>
         <div class="header-links pt10 fw800">
-            <a href="#">Главная</a>
-            <a href="">Ассортимент</a>
-            <a href="#">О нас</a>
+            <a href="/index.html">Главная</a>
+            <a href="/order.html">Ассортимент</a>
+            <a href="/about.html">О нас</a>
         </div>
     </header>
 
@@ -36,7 +37,7 @@
             <div class="title-form ctrobj ">
                 <p>ВВЕДИТЕ ДАННЫЕ:</p>
             </div>
-            <form action="http://vh522015.eurodir.ru/order/create" class="forms" method="POST">
+            <form action="" class="forms" method="POST">
                 <div class="input-box flex">
                     <p>ФИО: </p><input type="text" name="FIO">
                 </div>
@@ -62,8 +63,11 @@
                 <div class="input-box flex">
                     <p>Цена :</p><input type="text" name="price" id="price" readonly>
                 </div>
+                <div class="text-price">
+                    <p>ВНИМАНИЕ, ОПЛАТА НАЛИЧНЫМИ</p>
+                </div>
                 <div class="form-btn ">
-                    <input id="submit" type="submit" value="submit" />
+                    <input id="submit" type="submit" value="ЗАКАЗАТЬ" />
                 </div>
                 <div class="text-confid">
                     <br>
@@ -72,8 +76,24 @@
             </form>
         </div>
     </section>
-    <footer class="ctrobj">
-
+    <footer class="ctrobj flex">
+        <div class="left-side">
+            <div class="text-logo">
+                <p>
+                    ЧЕТКИЙ ХАВЧИК
+                    <br>“ВНАТУРЕ ГРЮ”
+                </p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="text-desk">
+                <p>
+                    Адрес: Саратов, Крымская 64
+                    <br>Тел. : 88005553535
+                    <br>Email: index@chetHav.ru
+                </p>
+            </div>
+        </div>
     </footer>
     <script src="assets/js/main.js"></script>
 </body>

@@ -61,7 +61,7 @@ a{
 
 }
 .shadow{
-    box-shadow: 0px 0px 4px rgb(110, 110, 110);
+    box-shadow: 0px 0px 8px rgb(110, 110, 110);
 }
 .item{
     min-height: 340px;
@@ -128,7 +128,7 @@ a{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 800;
 }
 .input-box {
@@ -173,7 +173,27 @@ a{
 #price{
     input-security:unset ;
 }
+.text-price{
+    padding-top: 30px;
+    font-size: 24px;
+    font-weight: 800;
+    color:red;
+    text-align: center;
+    /* border:1px red solid; */
+}
 footer{
     height: 150px;
     background-color:#000;  
+    justify-content: space-between;
+    color:#fff;
+    padding: 50px 50px 0px 50px;
+}
+.text-logo{
+    font-size: 24px;
+    color:#FFA800;
+    font-weight: 800;
+}
+.text-desk{
+    text-align: right;
+    padding-top: 5px;
 }
